@@ -1,0 +1,29 @@
+footer{
+  font-size:0.8em;
+  bottom:0;
+}
+
+.icon{
+  min-width: 30px;
+  height: 1em;
+  width: 1em;
+  max-width: 5%;
+  max-height: 5%;
+}
+
+.box{
+  padding: 2%;
+  min-height: 150px;
+  max-width: 100%;
+}
+
+.icon-label{
+  display: inline-block;
+  font-size: 2.5em;;
+}
+
+badge{
+  height: 100%;
+  background-color: blue;
+  border-radius: 0.2em;
+}

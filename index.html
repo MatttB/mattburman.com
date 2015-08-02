@@ -43,9 +43,10 @@
     <nav class="navdrawer-container promote-layer">
         <h4>Navigation</h4>
         <ul>
-          <li><a href="#hello">Hello</a></li>
-          <li><a href="#get-started">Get Started</a></li>
-          <li><a href="styleguide.html">Style Guide</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Portfolio">Portfolio</a></li>
+          <li><a href="#Education">Education</a></li>
         </ul>
 
     </nav>
@@ -54,40 +55,116 @@
     <link rel="stylesheet" href="styles/home.css">
 
     <main>
-
       <div class="flexbox-container">
-        <div class="about box">
-          <div class="icon">
-            <img src="images/icons/user168.svg">
+        <div id="About"></div>
+
+          <div class="about-heading heading-box">
+              <img class="icon" src="images/icons/user168.svg">
+            <div class="icon-label">About</div>
           </div>
-          <div class="icon-label">About</div>
-          <ul>
-            <li>
-              Soon-to-be CS Student.
-            </li>
-            <li>
-              Interested in technology with potential for global scale.
-            </li>
-            <li>
-              Web dev. Mobile game dev.
-            </li>
-          <ul>
-        </div>
-        <div class="skills box">
-          <div class="icon">
-            <img src="images/icons/programming2.svg">
+
+            <div class="desc box">
+                CS Student.
+                <br>Interested in technology with potential for global scale.
+                <br>Looking for internship positions for the next two summers.
+            </div>
+            <div class="contact box">
+                <img class="icon" src="images/icons/mail3.svg"> <a href="mailto:lemattb@gmail.com">lemattb@gmail.com</a>
+                <br><img class="icon" src="images/icons/earth205.svg"> English
+                <br><img class="icon" src="images/icons/pin77.svg"> Derby, England, UK
+                <br><img class="icon" src="images/icons/telephone51.svg"> Available on request</li>
+            </div>
+
+          <div id="Skills" class="skills-heading heading-box">
+              <img class="icon" src="images/icons/programming2.svg">
+            <div class="icon-label">Skills</div>
           </div>
-          <div class="icon-label">Skills</div>
+
+            <div class="programming box">
+              <h3>Programming</h3>
+              <badges>
+                <badge>Python</badge>
+                <badge>Node.js</badge>
+                <badge>HTML, CSS, JS</badge>
+                <badge>C#</badge>
+              </badges>
+            </div>
+            <div class="other box">
+              <h3>Other</h3>
+              <badges>
+                <badge>Git</badge>
+                <badge>MongoDB</badge>
+                <badge>Unity3D</badge>
+                <badge>Twitter API</badge>
+                <badge>Photoshop</badge>
+              </badges>
+            </div>
+
           <br>
-          <p><badge>Python.</badge>Node. HTML, CSS, JS. C#.
-          Git. Unity. Photoshop.</p>
-        </div>
-        <div class="portfolio box">
+
+        <div id="Portfolio" class="portfolio-heading heading-box">
           <div class="icon"><img src="images/icons/testtube12.svg"></div>
+          <div class="icon-label">Portfolio</div><br>
+          <i>First links go to the <a href="portfolio">portfolio page</a> for more details on each project.</i>
         </div>
-        <div class="education box">
+
+        <div class="portfolio box">
+          <ul>
+            <li>
+              <b><a href="/portfolio#react">React</a></b> - A game for <a href="https://play.google.com/store/apps/details?id=com.Matt.Reflex">Android</a> and <a href="">iOS</a>.
+              Implemented using <a href="http://unity3d.com/">Unity</a> and C#.
+            </li>
+            <li>
+              <b><a href="/portfolio#senpaibot">SenpaiBot</a></b> - <div id="senpaibot-desc"><a href="https://twitter.com/Senpai_Bot_">A Twitter bot</a> implemented in <a href="https://nodejs.org">NodeJS</a> using <a href="https://github.com/ttezel/twit">Twit</a>.</div>
+            </li>
+            <li>
+              <a href="/porfolio/#groupquiz"><img class="gq-logo" src="http://i.imgur.com/Sudf246.png"></a>
+                 - A custom quizzing site for teachers and students,
+                providing summary statistics about students' quiz sessions to teachers.
+                Built upon <a href="http://meanjs.org/">MeanJS</a>:
+                <a href="https://www.mongodb.org/">MongoDB</a>,
+                <a href="http://expressjs.com/">Express</a>,
+                <a href="https://angularjs.org/">AngularJS</a>, and
+                <a href="https://nodejs.org/">Node.js</a>.
+            </li>
+          </ul>
+        </div>
+
+        <div id="Education" class="education-heading heading-box">
           <div class="icon"><img src="images/icons/gears3.svg"></div>
+          <div class="icon-label">Education</div>
         </div>
+            <div class="courses box">
+              <h3>Courses</h3>
+              <ul>
+                <li>
+                  M101JS: MongoDB for Node.js Developers at <a href="https://university.mongodb.com/courses/M101JS/about">MongoDB University</a>.
+                  Certificate <a href="http://education.mongodb.com/downloads/certificates/4399f26b4e914deab91785b1aeabcdea/Certificate.pdf">here</a>.
+                </li>
+                <li>
+                  Shaping up with Angular.js at <a href="http://campus.codeschool.com/courses/shaping-up-with-angular-js">codeschool.com</a>
+                </li>
+                <li>
+                  Responsive Web Design Fundamentals
+                  at <a href="https://www.udacity.com/course/responsive-web-design-fundamentals--ud893"> Udacity</a>.
+                  Built by Google.
+                </li>
+              </ul>
+            </div>
+          <div class="alevels box">
+            <h3>A-levels</h3>
+            <ul>
+              <li>
+                <b>Computing - Grade TBD</b>.
+              </li>
+              <li>
+                Maths with Statistics - Grade TBD.
+              </li>
+              <li>
+                Physics - Grade TBD.
+              </li>
+            </ul>
+          </div>
 
       </div>
 
@@ -111,6 +188,28 @@
       ga('create', 'UA-XXXXX-X', 'auto');
       ga('send', 'pageview');
     </script>
+    <script type="text/javascript">
+    function loadJSON(callback) {
+      var xobj = new XMLHttpRequest();
+          xobj.overrideMimeType("application/json");
+      xobj.open('GET', 'http://cors.io/?u=https://cdn.syndication.twimg.com/widgets/followbutton/info.json?screen_names=Senpai_Bot_', true);
+      xobj.onreadystatechange = function () {
+            if (xobj.readyState == 4 && xobj.status == "200") {
+              // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+              callback(xobj.responseText);
+            }
+      };
+      xobj.send(null);
+  }
+  loadJSON(function(response){
+    var formatted_followers_count = JSON.parse(response)[0].formatted_followers_count;
+    if(formatted_followers_count){
+      document.getElementById("senpaibot-desc").innerHTML = "A <a href='https://twitter.com/Senpai_Bot_'>Twitter Bot</a>, currently with " + formatted_followers_count + ". Implemented in <a href='https://nodejs.org/'>Node.js</a> using <a href='https://github.com/ttezel/twit'> Twit</a>.";
+    } else {//fallback
+      document.getElementById("senpaibot-desc").innerHTML = "A <a href='https://twitter.com/Senpai_Bot_'>Twitter Bot</a> implemented in <a href='https://nodejs.org/'>Node.js</a> using <a href='https://github.com/ttezel/twit'> Twit.</a>"
+    }
+  });
+  </script>
     <!-- Built with love using Web Starter Kit -->
     <footer>
       <div>Icons by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>; License: <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>

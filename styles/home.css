@@ -1,29 +1,176 @@
-footer{
-  font-size:0.8em;
-  bottom:0;
+
+p, li, .flexbox-container{
+  font-size: 19px;
+  font-family: "Roboto Condensed";
+  font-weight: 400;
+}
+
+li{
+  display: list-item;
+}
+
+ul{
+  padding-top: 0;
 }
 
 .icon{
-  min-width: 30px;
-  height: 1em;
-  width: 1em;
-  max-width: 5%;
-  max-height: 5%;
-}
-
-.box{
-  padding: 2%;
-  min-height: 150px;
-  max-width: 100%;
+  height: 1.4em;
+  width: 1.4em;
+  padding-bottom: 1px;
 }
 
 .icon-label{
   display: inline-block;
-  font-size: 2.5em;;
+  font-size: 2.5em;
 }
 
+.flexbox-container{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+
+.heading-box{
+  padding-top: 25px;
+  height: auto;
+  width: 100%;
+  border-top: thin solid LightGray;
+}
+
+.box{
+  max-width: 100%;
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+}
+
+/* About */
+.about-heading{
+  order: 0;
+  max-width: 100%;
+}
+
+
+.desc{
+  max-width: 100%;
+  width: 100%;
+  order: 1;
+}
+.contact{
+  max-width: 100%;
+  width: 100%;
+  order: 2;
+}
+
+/* Skills */
+
+.skills-heading{
+  order: 10;
+}
+
+
 badge{
+  white-space: nowrap;
+  border-color: black;
+  padding: 0px 10px 0px 10px;
   height: 100%;
-  background-color: blue;
+  color: white;
+  min-width: 50px;
+  background-color: #343838;
   border-radius: 0.2em;
+}
+
+badges{
+  line-height: 155%;
+}
+
+h3{
+  padding-top: 0;
+  padding-bottom: 1%;
+}
+
+.programming{
+  order: 11;
+  width: 100%;
+}
+.other{
+  order: 12;
+  width: 100%;
+}
+
+/*Portfolio*/
+.portfolio-heading{
+  order: 20;
+  /*overrides heading-box.
+  compensating for the italic text below.*/
+}
+
+.portfolio{
+  order: 21;
+  width: 100%;
+}
+
+#senpaibot-desc{
+  display: inline;
+}
+
+.gq-logo{
+  width: 5em;
+  height: 1.2em;
+  text-decoration: underline;
+}
+
+/*Education*/
+.education-heading{
+  order: 30;
+}
+
+.courses{
+  order: 31;
+}
+
+.alevels{
+  order: 32;
+}
+
+
+
+@media only screen and (min-width: 500px){
+
+  /*About*/
+  .desc{
+    width: 50%;
+  }
+  .contact{
+    width: 50%;
+  }
+
+  /*Skills*/
+  .programming{
+    width: 50%;
+  }
+  .other{
+    padding-left: 1%;
+    width: 50%;
+  }
+
+  .box{
+    padding-right: 1%;
+  }
+
+}
+
+@media only screen and (min-width: 750px){
+  /*Education*/
+  .courses{
+    width: 50%;
+  }
+  .alevels{
+    width: 50%;
+  }
+}
+
+footer{
+  font-size:0.6em;
+  bottom:0;
+  text-align: right;
 }

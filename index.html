@@ -27,7 +27,7 @@
         <section class="app-bar-actions">
         <!-- Put App Bar Buttons Here -->
         <!-- e.g <button><i class="icon icon-star"></i></button> -->
-        <button>Portfolio</button>
+        <a href="portfolio"><button>Portfolio</button></a>
         <a href="https://twitter.com/_MatttB">
         <button class="twitter-button"><img src="images/icons/twitter.svg" alt="Twitter"></button></a>
 
@@ -105,20 +105,21 @@
         <div id="Portfolio" class="portfolio-heading heading-box">
           <div class="icon"><img src="images/icons/testtube12.svg"></div>
           <div class="icon-label">Portfolio</div><br>
+
           <i>First links go to the <a href="portfolio">portfolio page</a> for more details on each project.</i>
         </div>
 
         <div class="portfolio box">
           <ul>
             <li>
-              <b><a href="/portfolio#react">React</a></b> - A game for <a href="https://play.google.com/store/apps/details?id=com.Matt.Reflex">Android</a> and <a href="">iOS</a>.
+              <b><a href="/portfolio#React">React</a></b> - A game for <a href="https://play.google.com/store/apps/details?id=com.Matt.Reflex">Android</a> and <a href="">iOS</a>.
               Implemented using <a href="http://unity3d.com/">Unity</a> and C#.
             </li>
             <li>
-              <b><a href="/portfolio#senpaibot">SenpaiBot</a></b> - <div id="senpaibot-desc"><a href="https://twitter.com/Senpai_Bot_">A Twitter bot</a> implemented in <a href="https://nodejs.org">NodeJS</a> using <a href="https://github.com/ttezel/twit">Twit</a>.</div>
+              <b><a href="/portfolio#SenpaiBot">SenpaiBot</a></b> - <div id="senpaibot-desc"><a href="https://twitter.com/Senpai_Bot_">A Twitter bot</a> implemented in <a href="https://nodejs.org">NodeJS</a> using <a href="https://github.com/ttezel/twit">Twit</a>.</div>
             </li>
             <li>
-              <a href="/porfolio/#groupquiz"><img class="gq-logo" src="http://i.imgur.com/Sudf246.png"></a>
+              <a href="/portfolio/#GroupQuiz"><img class="gq-logo" src="http://i.imgur.com/Sudf246.png"></a>
                  - A custom quizzing site for teachers and students,
                 providing summary statistics about students' quiz sessions to teachers.
                 Built upon <a href="http://meanjs.org/">MeanJS</a>:
@@ -155,13 +156,13 @@
             <h3>A-levels</h3>
             <ul>
               <li>
-                <b>Computing - Grade TBD</b>.
+                <b>Computing - Grade TBC</b>.
               </li>
               <li>
-                Maths with Statistics - Grade TBD.
+                Maths with Statistics - Grade TBC.
               </li>
               <li>
-                Physics - Grade TBD.
+                Physics - Grade TBC.
               </li>
             </ul>
           </div>
@@ -185,31 +186,13 @@
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-XXXXX-X', 'auto');
+
+      ga('create', 'UA-66277110-1', 'auto');
+      ga('require', 'linkid', 'linkid.js');
       ga('send', 'pageview');
+
     </script>
-    <script type="text/javascript">
-    function loadJSON(callback) {
-      var xobj = new XMLHttpRequest();
-          xobj.overrideMimeType("application/json");
-      xobj.open('GET', 'http://cors.io/?u=https://cdn.syndication.twimg.com/widgets/followbutton/info.json?screen_names=Senpai_Bot_', true);
-      xobj.onreadystatechange = function () {
-            if (xobj.readyState == 4 && xobj.status == "200") {
-              // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
-              callback(xobj.responseText);
-            }
-      };
-      xobj.send(null);
-  }
-  loadJSON(function(response){
-    var formatted_followers_count = JSON.parse(response)[0].formatted_followers_count;
-    if(formatted_followers_count){
-      document.getElementById("senpaibot-desc").innerHTML = "A <a href='https://twitter.com/Senpai_Bot_'>Twitter Bot</a>, currently with " + formatted_followers_count + ". Implemented in <a href='https://nodejs.org/'>Node.js</a> using <a href='https://github.com/ttezel/twit'> Twit</a>.";
-    } else {//fallback
-      document.getElementById("senpaibot-desc").innerHTML = "A <a href='https://twitter.com/Senpai_Bot_'>Twitter Bot</a> implemented in <a href='https://nodejs.org/'>Node.js</a> using <a href='https://github.com/ttezel/twit'> Twit.</a>"
-    }
-  });
-  </script>
+    <script src="/scripts/updateSenpaiDesc.js"></script>
     <!-- Built with love using Web Starter Kit -->
     <footer>
       <div>Icons by <a href="http://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>; License: <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>

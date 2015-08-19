@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="About, and the portfolio of, Matt Burman">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MattBurman.com - Portfolio</title>
+    <title>MattBurman.com - SenpaiBot</title>
 
     <meta name="theme-color" content="#00B4FF">
     <!-- palette: http://www.colourlovers.com/palette/1/metro-->
@@ -17,7 +17,6 @@
 
     <!-- Page styles -->
     <link rel="stylesheet" href="../styles/main.css">
-    
   </head>
   <body>
     <header class="app-bar promote-layer">
@@ -52,7 +51,7 @@
     </nav>
 
     <!--page specific styles after first render -->
-    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/senpai.css">
 
     <main>
       <div class="flexbox-container">
@@ -60,20 +59,28 @@
 
           <div class="about-heading heading-box">
             <div class="icon-label">
-              Portfolio.
+              SenpaiBot
             </div>
           </div>
 
             <div class="desc box">
-                CS Student.
-                <br>Interested in technology with potential for global scale.
-                <br>Looking for internship positions for the next two summers.
-            </div>
-            <div class="contact box">
-                <img class="icon" src="../images/icons/mail3.svg"> <a href="mailto:lemattb@gmail.com">lemattb@gmail.com</a>
-                <br><img class="icon" src="../images/icons/earth205.svg"> English
-                <br><img class="icon" src="../images/icons/pin77.svg"> Derby, England, UK
-                <br><img class="icon" src="../images/icons/telephone51.svg"> Available on request</li>
+              <div id="senpaibot-desc" param="portfolio">
+                <p>
+                  <a href="https://twitter.com/Senpai_Bot_">A Twitter bot</a>
+                  implemented in <a href="https://nodejs.org">NodeJS</a> using <a href="https://github.com/ttezel/twit">Twit</a>.
+                </p>
+              </div>
+              <p>
+                It was a weekend hack,
+                which only really came into being from just playing around with the Twitter API for fun one night.
+              </p>
+              <p>
+                I was initially playing with the <a href="https://dev.twitter.com/streaming/overview">streaming API</a>.
+                Fairly quickly after making it respond to all tweets containing "Notice me Senpai",
+                it began to get a considerable amount of followers.
+                By the time the weekend was over, it had gained a few hundred followers and has continued to gain over 100/day ever since.
+                (<i>When it's not <a href="https://twitter.com/hashtag/BringBackSenpaiBot">suspended</a>, of course.</i>)
+              </p>
             </div>
 
           <div id="React" class="react-heading heading-box">
@@ -81,7 +88,7 @@
             <div class="icon-label">React</div>
           </div>
 
-              <div class="react-player-wrapper portrait-player-wrapper player-wrapper box">
+              <div class="react-player-wrapper portrait-player-wrapper player-wrapper react-player box">
                 <div id="reactplayer"></div>
               </div>
 
@@ -99,7 +106,7 @@
 
 
         <div id="SenpaiBot" class="senpaibot-heading heading-box">
-          <a href="https://twitter.com/Senpai_Bot_"><img class="icon" src="../images/icons/twitter.svg"></a>
+          <a href="https://twitter.com/Senpai_Bot_"><div class="icon"><img src="../images/icons/twitter.svg"></div></a>
           <div class="icon-label">SenpaiBot</div><br>
         </div>
 
@@ -135,7 +142,7 @@
 
 
         <div id="GroupQuiz" class="groupquiz-heading heading-box">
-          <img class="icon" src="images/groupquiz-logo.svg">
+          <div class="icon"><img src="images/groupquiz-logo.svg"></div>
           <div class="icon-label">GroupQuiz</div>
         </div>
             <div class="groupquiz-desc box">
@@ -268,6 +275,5 @@
 
     </footer>
     <script src="../scripts/updateSenpaiDesc.js"></script>
-
   </body>
 </html>

@@ -83,7 +83,7 @@ ul{
   display: block;
   content: '';
 }
-.landscape-player-wrapper:after{
+.landscape-player-wrapper{
   padding-top: 56.25%;
   /* 9:16 ratio */
   display: block;
@@ -179,12 +179,15 @@ h3{
 @media only screen and (min-width: 500px){
 
   /*About*/
+  /*
   .desc{
     width: 50%;
   }
+
   .contact{
     width: 50%;
   }
+  */
 
   /*Skills*/
   .programming{

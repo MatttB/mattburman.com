@@ -52,6 +52,7 @@
   // and that the current page is accessed from a secure origin. Using a
   // service worker from an insecure origin will trigger JS console errors. See
   // http://www.chromium.org/Home/chromium-security/prefer-secure-origins-for-powerful-new-features
+  /*
   if ('serviceWorker' in navigator &&
       (window.location.protocol === 'https:' ||
        window.location.hostname === 'localhost' ||
@@ -97,6 +98,7 @@
       console.error('Error during service worker registration:', e);
     });
   }
+  */
 
   // Your custom JavaScript goes here
 })();
